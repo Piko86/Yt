@@ -16,11 +16,11 @@ if (!fs.existsSync(apkDir)) {
 
 // Download endpoint for APK
 app.get('/download', (req, res) => {
-    const apkPath = path.join(__dirname, 'Apk', 'Youtube Premium.apk');
+    const apkPath = path.join(__dirname, 'Apk', '𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐏𝐫𝐞𝐦𝐢𝐮𝐦ᴮʸ ᴾᴵᴷᴼ.apk');
     
     // Check if file exists
     if (fs.existsSync(apkPath)) {
-        res.download(apkPath, 'Youtube-Premium.apk', (err) => {
+        res.download(apkPath, '𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐏𝐫𝐞𝐦𝐢𝐮𝐦ᴮʸ ᴾᴵᴷᴼ.apk', (err) => {
             if (err) {
                 console.error('Download error:', err);
                 res.status(500).send('Error downloading file');
